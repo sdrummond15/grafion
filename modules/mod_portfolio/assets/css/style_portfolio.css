@@ -1,0 +1,343 @@
+#modportfolio {
+    width: 100%;
+    display: table;
+}
+
+#modportfolio .projetos {
+    width: 1090px;
+    margin: auto;
+    display: table;
+    padding: 40px;
+}
+
+#modportfolio .projetos h1 {
+    font-family: 'quicksandbold';
+    color: #878787;
+    margin: 0 0 8px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+#modportfolio .projetos .linha {
+    width: 70px;
+    height: 6px;
+    background-color: rgba(115, 149, 24, 0.8);
+    margin: auto;
+}
+
+#modportfolio .projetos .projetos_box {
+    margin: auto;
+    display: table;
+    padding-top: 30px;
+}
+
+#modportfolio .projetos .proj_box {
+    width: 360px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(89, 122, 0, 0.7);
+    display: table;
+    float: left;
+    position: relative;
+    background-size: 100% auto !important;
+    background-position: center center !important;
+    -webkit-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: all 400ms;
+    -webkit-transition: all 400ms;
+}
+
+#modportfolio .projetos .proj_box:hover {
+    background-size: 105% auto !important;
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) {
+    height: 120px;
+}
+
+#modportfolio .projetos .proj_box:nth-child(2) {
+    height: 360px;
+}
+
+#modportfolio .projetos .proj_box:nth-child(3) {
+    height: 145px;
+    margin-right: 0;
+}
+
+#modportfolio .projetos .proj_box:nth-child(4) {
+    height: 210px;
+    margin-right: 0;
+}
+
+#modportfolio .projetos .proj_box:nth-child(5) {
+    margin-right: 0;
+    margin-top: -240px;
+    height: 190px;
+}
+
+#modportfolio .projetos .proj_box:nth-child(6) {
+    margin-top: -45px;
+    height: 345px;
+}
+
+#modportfolio .projetos .proj_box:nth-child(7) {
+    height: 300px;
+    width: 725px;
+    margin-right: 0;
+}
+
+#modportfolio .projetos .proj_box .proj_box_info {
+    padding: 20px 10px;
+    font-size: 13px;
+    line-height: 13px;
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modportfolio .projetos .proj_box:hover .proj_box_info {
+    visibility: visible;
+    opacity: 1;
+}
+
+#modportfolio .projetos .proj_box:nth-child(7) .proj_box_info {
+    right: 0;
+}
+
+#modportfolio .projetos .proj_box .proj_box_info h1 {
+    margin: 0 0 5px 0 !important;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+#modportfolio .projetos .proj_box .proj_box_info h1 > a {
+    text-decoration: none;
+    color: #FFF;
+    -webkit-transition: color 400ms;
+    transition: color 400ms;
+    font-family: 'roboto_condensedlight';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#modportfolio .projetos .proj_box .proj_box_overlay {
+    opacity: 0;
+    transition: opacity 400ms;
+    -webkit-transition: opacity 400ms;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#modportfolio .projetos .proj_box:hover .proj_box_overlay {
+    opacity: 1;
+}
+
+#modportfolio .projetos .proj_box .proj_box_overlay .proj_box_middle {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+#modportfolio .projetos .proj_box .proj_box_overlay .proj_box_middle > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#modportfolio .projetos .proj_box .proj_box_btns a {
+    display: inline-block;
+    padding: 10px 12px;
+    margin: 3px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0;
+    -webkit-transform: scale3d(0, 0, 0);
+    transform: scale3d(0, 0, 0);
+    -webkit-transition: all 400ms;
+    transition: all 400ms;
+}
+
+#modportfolio .projetos .proj_box .proj_box_btns a:hover {
+    background: #333;
+    border-color: #333;
+}
+
+#modportfolio .projetos .proj_box:hover .proj_box_btns a {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) a {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    padding: 20px;
+    position: absolute;
+    text-decoration: none;
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) h1 {
+    display: block;
+}
+
+#modportfolio .projetos .proj_box a h1 {
+    color: #FFF;
+    text-align: left;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'robotocondensed';
+    font-weight: normal;
+    display: none;
+}
+
+#modportfolio .projetos .proj_box:hover a h1 {
+    display: block;
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) a h1 {
+    color: #FFF;
+    font-family: 'quicksandbold';
+    margin-top: 10px;
+}
+
+#modportfolio .projetos .proj_box:nth-child(7) a h1 {
+    text-align: right;
+    color: #FFF;
+}
+
+#modportfolio .projetos .proj_box a h3 {
+    color: #333333;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: 'roboto_condensedlight';
+    margin-bottom: 0px;
+}
+
+#modportfolio .projetos .proj_box a h3 strong {
+    font-family: 'robotobold_condensed';
+}
+
+#modportfolio .projetos .proj_box:nth-child(1) a h3 {
+    color: #FFF;
+    font-family: 'quicksandregular';
+}
+
+@media screen and (max-width: 1200px) {
+    #modportfolio .projetos {
+        width: 96%;
+        padding: 40px 0;
+    }
+
+    #modportfolio .projetos .proj_box {
+        width: calc(33.33% - 5px);
+        background-repeat: no-repeat !important;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(7) {
+        width: calc(66.66% - 5px);
+    }
+
+    #modportfolio .projetos .projetos_box {
+        width: 100%;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(2),
+    #modportfolio .projetos .proj_box:nth-child(4),
+    #modportfolio .projetos .proj_box:nth-child(6) {
+        background-size: auto 100% !important;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(1) a h1 {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    #modportfolio .projetos .proj_box {
+        width: calc(50% - 5px);
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(1),
+    #modportfolio .projetos .proj_box:nth-child(2),
+    #modportfolio .projetos .proj_box:nth-child(3),
+    #modportfolio .projetos .proj_box:nth-child(4),
+    #modportfolio .projetos .proj_box:nth-child(5),
+    #modportfolio .projetos .proj_box:nth-child(6) {
+        height: 200px;
+        margin-top: 0;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(3),
+    #modportfolio .projetos .proj_box:nth-child(5) {
+        margin-right: 5px;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(2),
+    #modportfolio .projetos .proj_box:nth-child(4),
+    #modportfolio .projetos .proj_box:nth-child(6) {
+        margin-right: 0;
+        background-size: 100% auto !important;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(7) {
+        width: calc(100% - 5px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #modportfolio .projetos .proj_box:nth-child(1),
+    #modportfolio .projetos .proj_box:nth-child(2),
+    #modportfolio .projetos .proj_box:nth-child(3),
+    #modportfolio .projetos .proj_box:nth-child(4),
+    #modportfolio .projetos .proj_box:nth-child(5),
+    #modportfolio .projetos .proj_box:nth-child(6) {
+        height: 150px;
+    }
+
+    #modportfolio .projetos .proj_box:nth-child(7) {
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #modportfolio .projetos .proj_box:nth-child(1),
+    #modportfolio .projetos .proj_box:nth-child(2),
+    #modportfolio .projetos .proj_box:nth-child(3),
+    #modportfolio .projetos .proj_box:nth-child(4),
+    #modportfolio .projetos .proj_box:nth-child(5),
+    #modportfolio .projetos .proj_box:nth-child(6),
+    #modportfolio .projetos .proj_box:nth-child(7) {
+        width: 100%;
+        margin-right: 0;
+        height: 160px;
+    }
+}

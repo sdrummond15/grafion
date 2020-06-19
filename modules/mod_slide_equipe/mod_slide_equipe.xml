@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+    type="module"
+    version="2.5"
+    client="site"
+    method="upgrade">
+    <name>mod_slide_equipe</name>
+    <author>Wanderson Alves</author>
+    <creationDate>February 2017</creationDate>
+    <copyright>Copyright(C) - 2017 - Sdrummond Soluções em Tecnologia. All rights reserved.</copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+    <authorEmail>wanderson@sdrummond.com.br</authorEmail>
+    <authorUrl>www.sdrummond.com.br</authorUrl>
+    <version>1.0.1</version>
+    <description>MOD_SLIDE_EQUIPE_XML_DESCRIPTION</description>
+    <files>
+        <filename module="mod_slide_equipe">mod_slide_equipe.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>		
+        <filename>mod_slide_equipe.xml</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="txtintro"
+                       type="textarea"
+                       size="10"
+                       label="LABEL_TXT_INTRO"
+                       rows="10"
+                />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

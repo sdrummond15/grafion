@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- $Id: default.xml 51 2010-11-22 01:33:21Z chdemko $ -->
+<metadata>
+    <layout title="COM_SERVICES_SERVICES_VIEW_DEFAULT_TITLE">
+        <message>COM_SERVICES_SERVICES_VIEW_DEFAULT_DESC</message>
+    </layout>
+    <fields name="request">
+        <fieldset name="request">
+            <field name="servico"
+                   type="sql"
+                   label="Serviço"
+                   query="SELECT id AS id, name AS title FROM #__services"
+                   key_field="id"
+                   value_field="title"
+            />
+        </fieldset>
+    </fields>
+</metadata>
+
