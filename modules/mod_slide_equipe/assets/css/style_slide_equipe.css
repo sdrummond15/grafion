@@ -97,12 +97,12 @@
 #modslide_equipes .slider-wrap {
     position: relative;
     margin: 50px auto 0px auto;
-    width: 1170px;
+    width: 600px;
 }
 
 #modslide_equipes .slider {
     position: relative;
-    width: 1170px;
+    width: 600px;
     margin: auto;
     padding: 10px 0;
 }
@@ -166,16 +166,10 @@
         width: 96%;
         margin: auto;
     }
-
     #modslide_equipes .slider-wrap {
         width: 100%;
     }
-    .inactive {
-        left: auto !important;
-        width: auto !important;
-        display: inherit;
-        overflow: auto;
-    }
+    
 }
 @media screen and (max-width: 1000px) {
     #modslide_equipes .slider-arrow {
@@ -184,5 +178,14 @@
 
     #modslide_equipes .slider-arrow:hover {
         opacity: 1;
+    }
+
+}
+@media screen and (max-width: 660px) {
+    .inactive {
+        left: auto !important;
+        width: auto !important;
+        display: inherit;
+        overflow: auto;
     }
 }
